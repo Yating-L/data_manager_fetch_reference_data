@@ -1,0 +1,4 @@
+categories: [Data Managers]
+description: fetching reference data for GlimmerHMM
+name: data_manager_fetch_reference_data
+owner: yating-l

@@ -1,0 +1,15 @@
+<tool id="data_manager_fetch_reference_data" name="Reference data for GlimmerHMM" version="0.0.1" tool_type="manage_data">
+    <description>fetching reference data for GlimmerHMM</description>
+    <command interpreter="python">fetch_reference_data.py -o "${out_file}"</command>
+    <inputs>
+        <param name="genome_id" type="text" label="Id of the reference genome" />
+        <param name="genome_name" type="text" label="Name of the reference genome" />
+        <param name="trained_url" type="text" value="" label="Directory of the genome file" />
+    </inputs>
+    <outputs>
+        <data name="out_file" format="data_manager_json" />
+    </outputs>
+    <help>
+        Fetch trained data (reference genome) for GlimmerHMM
+    </help>
+</tool>
